@@ -1,0 +1,25 @@
+1.  HomePage'de Saat kelimesini arattır.
+2.  Çıkan ürünlerden 7.ürünün ürün detay sayfasını görüntüle
+3.  Ürünü sepete ekle
+4.  Ürünün sepete eklendiğini doğrula
+5.  Sepetteki ürünün miktarını 2 birim artır.
+6.  Ürünü sepetten sil.
+7.  Sepetin boş olduğunu doğrula.
+
+STEPLER:
+1. Cinsiyet sayfasını kapat
+2.
+3. click searchBox
+4. sendKeys "saat"
+5. pressKey SEARCH BUTTON
+6. Arama sonuç popup kapat
+7. 7.ürüne kadar scrollDown yap
+8. 7.ürüne clicklemeden önce ismini string olarak bir değişkene ata
+9. 7.ürüne tıkla
+10. Ürün detey sayfasındayken Sepete Ekle butonuna tıkla
+11. Sepete gitmek için ekran sağ üst köşedeki sepet ikonuna tıkla
+12. Sepetteki ürün ismi ile 8.adımdaki ürün isminin aynı olduğunu kontrol et
+13. Sepetteki "+" buttonuna iki defa tıkla
+14. Sepetteki ürünün sağ üst köşesindeki çöp kutusunu clickle
+15. Alttan çıkan popuptaki çöp kutusuna clickle
+16. "Sepetinizde ürün bulunmamaktadır" elementinin görüldüğünü doğrula
