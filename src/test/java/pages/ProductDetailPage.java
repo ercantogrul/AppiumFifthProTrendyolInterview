@@ -13,7 +13,8 @@ public class ProductDetailPage {
     }
 
     By addToCartButton = By.id("trendyol.com:id/primaryButton");
-    By cartIcon = By.id("trendyol.com:id/productDetailBasket");
+    //By cartIcon = By.id("trendyol.com:id/productDetailBasket");
+    By cartIcon = By.id("trendyol.com:id/productDetailBasketItemCount");
 
 //    public void addProductToShoppingCart(){
 //        methods.click(addToCartButton);

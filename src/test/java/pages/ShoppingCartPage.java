@@ -14,7 +14,8 @@ public class ShoppingCartPage {
         methods = new ReusableMethods(driver);
     }
 
-    By sepettekiUrunAdi = By.id("trendyol.com:id/textViewBrandName");
+    //By sepettekiUrunAdi = By.id("(trendyol.com:id/textViewBrandName)[1]");
+    By sepettekiUrunAdi = By.xpath("(//android.widget.TextView[@resource-id=\"trendyol.com:id/textViewBrandName\"])[1]");
     By plusButton = By.id("trendyol.com:id/image_add");
     By copKutusu1 = By.id("trendyol.com:id/imageViewDeleteProduct");
     By copKutusu2 = By.id("trendyol.com:id/textViewBasketRemoveAction");
@@ -22,6 +23,8 @@ public class ShoppingCartPage {
 
     public void checkProductOnShoppingCart(){
         productNameOnCart = methods.getText(sepettekiUrunAdi).toLowerCase();
+        System.out.println("productNameOnCart = " + productNameOnCart);
+
         Assert.assertEquals(productNameOnCart, ProductsPage.productName.toLowerCase());
     }
     public void increaseProductByTwoOnShoppingCart() throws InterruptedException {

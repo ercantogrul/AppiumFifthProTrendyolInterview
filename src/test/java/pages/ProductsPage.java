@@ -15,7 +15,8 @@ public class ProductsPage {
     }
 
     By popupCloseButton = By.id("trendyol.com:id/imageViewTooltipClose");
-    By product = By.xpath("(//android.widget.TextView[@resource-id='trendyol.com:id/textview_title_product'])[1]");
+    //By product = By.xpath("(//android.widget.TextView[@resource-id='trendyol.com:id/textview_title_product'])[1]");
+    By product = By.xpath("(//androidx.compose.ui.platform.ComposeView[@resource-id=\"trendyol.com:id/composeViewProductTitle\"])[1]//android.widget.TextView");
    // By product = By.xpath("(//android.view.View/android.widget.TextView)[1]");
     By indexNo = By.id("trendyol.com:id/textViewScrolledItemCount");
 
@@ -55,6 +56,7 @@ public class ProductsPage {
 
     public void tiklamadanUnceUrunIsimBilgisi(int sayi) {
         productName= methods.getText(product);
+        System.out.println("productName.toLowerCase() = " + productName.toLowerCase());
     }
 
     public void uruneClickle(int sayi) {

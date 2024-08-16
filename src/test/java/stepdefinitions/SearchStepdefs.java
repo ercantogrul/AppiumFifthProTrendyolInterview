@@ -19,7 +19,7 @@ public class SearchStepdefs {
 
     @And("Arama sonuç popup kapat")
     public void aramaSonucPopupKapat() {
-        sp.clickClosePopup();
+       // sp.clickClosePopup();
     }
 
 
